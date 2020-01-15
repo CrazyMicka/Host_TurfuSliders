@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "nom": "TurfuSliders",
+    "description": "Bot à usage personnel",
+    "main": "bot.js",
+    "scripts": {
+        "start": "node ."
+    },
+    "author": "CrazyMicka",
+    "license": "CrazyCorp.",
+    "dependencies": {
+        "bufferutil": "^4.0.1",
+        "discord.js": "^11.5.0",
+        "node.js": "0.0.0",
+        "require.js": "^1.0.0",
+        "requirejs": "^2.3.6"
+    }
+}
