@@ -1,8 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+var prefix = "!"
 
 client.on('message', message => {
-  if(message.content.startsWith(process.env.PREFIX + "clear")) {
+  if(message.content.startsWith(prefix + "clear")) {
 
           
       let args = message.content.split(" ").slice(1);
@@ -16,7 +17,7 @@ client.on('message', message => {
   }});
   
  client.on('message', function(message) {
-      if(message.content.startsWith(process.env.PREFIX + "purge"))
+      if(message.content.startsWith(prefix + "purge"))
           {
               message.channel.fetchMessages()
                  .then(function(list){
@@ -27,7 +28,7 @@ client.on('message', message => {
   )}});
 
 client.on('message', message => {
-    if(message.content.startsWith(process.env.PREFIX + 'ids')) {
+    if(message.content.startsWith(prefix + 'ids')) {
       if (message.channel.type === "dm") return;   
        message.channel.send(`**${message.author.username} **` + "Voici ton ID: " + `__${message.author.id}__`);
     }});
